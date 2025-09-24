@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio</title>
+    <link rel="stylesheet" href="Style/window.css">
+    <link rel="stylesheet" href="Style/sidebar.css">
+    <link rel="stylesheet" href="Style/home.css">
+    <link rel="stylesheet" href="Style/work.css">
+    <link rel="stylesheet" href="Style/resume.css">
+    <link rel="stylesheet" href="Style/services.css">
+    <link rel="stylesheet" href="Style/testimonies.css">
+    <link rel="stylesheet" href="Style/details.css">
+    <link rel="stylesheet" href="Style/contact.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main_inner">
+            <div class="section_main">
+                <div class="section_main_window" id="main_window">
+                    <div class="section_main_window_inner" id="main_window_inner">
+
+                        <div class="hero" id="hero_section">
+                            <div class="hero_inner">
+                                <div class="hero_content">
+                                    <picture>
+                                        <source srcset="Images/heroIMGMobile.png" media="(max-width: 480px)">
+                                        <source srcset="Images/heroIMGTablet.png" media="(max-width: 900px)">
+                                        <img src="Images/heroIMG.png" alt="">
+                                    </picture>
+                                    <h1>Full-stack Unity games built to scale</h1>
+                                    <p>Unity mobile development with clean code, engaging mechanics, and store-ready polish</p>
+                                    <button onclick="ExploreProjects()">Explore Projects</button>
+                                </div>
+                                <div class="hero_metrics">
+                                    <div class="metric">
+                                        <h1>5M+</h1>
+                                        <p>Downloads</p>
+                                    </div>
+                                    <div class="metric">
+                                        <h1>6+</h1>
+                                        <p>Years of Experience</p>
+                                    </div>
+                                    <div class="metric">
+                                        <h1>4.5★</h1>
+                                        <p>Avg Ratings</p>
+                                    </div>
+                                    <div class="metric">
+                                        <h1>15+</h1>
+                                        <p>Games Delivered</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="work" id="work_section">
+                            <div class="work_inner">
+
+                                <div class="header">
+                                <h1>Explore My Projects</h1>
+                                <div id="filters_container" class="filters"></div>
+                                </div>
+
+
+                                <div class="product_window">
+
+                                    <!-- <div class="controls">
+                                        <div class="left"><p><</p></div>
+                                        <div class="right"><p>></p></div>
+                                    </div> -->
+
+                                    <div class="products" id="products_container">
+
+                                        <div class="product">
+                                            <div class="product_inner">
+                                                <div class="img"></div>
+                                                <div class="content">
+                                                    <div class="upper">
+                                                        <div class="filters">
+                                                            <div class="filter filter_toprated">Top Rated</div>
+                                                            <div class="filter filter_3d">3D</div>
+                                                        </div>
+                                                        <div class="link">
+                                                            <div class="icon" style="mask-image: url(Images/Link.png);"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="middle">
+                                                        <h1>Fit Blast: Toon Cube Puzzle</h1>
+                                                        <p>Fit Blast is a fast-paced puzzle game where you fit shapes and blast through levels.</p>
+                                                        <button onclick="showDetails(1)">See Details</button>
+                                                    </div>
+                                                    <div class="lower">
+                                                        <div class="metrics">
+                                                            <div class="metric">
+                                                                <div class="icon" style="mask-image: url(Images/Download.png);"></div>
+                                                                <div class="text">1M+</div>
+                                                            </div>
+                                                            <div class="metric">
+                                                                <div class="text">4.8★</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product">
+                                            <div class="product_inner">
+                                                <div class="img"></div>
+                                                <div class="content">
+                                                    <div class="upper">
+                                                        <div class="filters">
+                                                            <div class="filter filter_toprated">Top Rated</div>
+                                                            <div class="filter filter_3d">3D</div>
+                                                        </div>
+                                                        <div class="link">
+                                                            <div class="icon" style="mask-image: url(Images/Link.png);"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="middle">
+                                                        <h1>Fit Blast: Toon Cube Puzzle</h1>
+                                                        <p>Fit Blast is a fast-paced puzzle game where you fit shapes and blast through levels.</p>
+                                                        <button onclick="showDetails(2)">See Details</button>
+                                                    </div>
+                                                    <div class="lower">
+                                                        <div class="metrics">
+                                                            <div class="metric">
+                                                                <div class="icon" style="mask-image: url(Images/Download.png);"></div>
+                                                                <div class="text">1M+</div>
+                                                            </div>
+                                                            <div class="metric">
+                                                                <div class="text">4.8★</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product">
+                                            <div class="product_inner">
+                                                <div class="img"></div>
+                                                <div class="content">
+                                                    <div class="upper">
+                                                        <div class="filters">
+                                                            <div class="filter filter_toprated">Top Rated</div>
+                                                            <div class="filter filter_3d">3D</div>
+                                                        </div>
+                                                        <div class="link">
+                                                            <div class="icon" style="mask-image: url(Images/Link.png);"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="middle">
+                                                        <h1>Fit Blast: Toon Cube Puzzle</h1>
+                                                        <p>Fit Blast is a fast-paced puzzle game where you fit shapes and blast through levels.</p>
+                                                        <button onclick="showDetails(3)">See Details</button>
+                                                    </div>
+                                                    <div class="lower">
+                                                        <div class="metrics">
+                                                            <div class="metric">
+                                                                <div class="icon" style="mask-image: url(Images/Download.png);"></div>
+                                                                <div class="text">1M+</div>
+                                                            </div>
+                                                            <div class="metric">
+                                                                <div class="text">4.8★</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product">
+                                            <div class="product_inner">
+                                                <div class="img"></div>
+                                                <div class="content">
+                                                    <div class="upper">
+                                                        <div class="filters">
+                                                            <div class="filter filter_toprated">Top Rated</div>
+                                                            <div class="filter filter_3d">3D</div>
+                                                        </div>
+                                                        <div class="link">
+                                                            <div class="icon" style="mask-image: url(Images/Link.png);"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="middle">
+                                                        <h1>Fit Blast: Toon Cube Puzzle</h1>
+                                                        <p>Fit Blast is a fast-paced puzzle game where you fit shapes and blast through levels.</p>
+                                                        <button onclick="showDetails(4)">See Details</button>
+                                                    </div>
+                                                    <div class="lower">
+                                                        <div class="metrics">
+                                                            <div class="metric">
+                                                                <div class="icon" style="mask-image: url(Images/Download.png);"></div>
+                                                                <div class="text">1M+</div>
+                                                            </div>
+                                                            <div class="metric">
+                                                                <div class="text">4.8★</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product">
+                                            <div class="product_inner">
+                                                <div class="img"></div>
+                                                <div class="content">
+                                                    <div class="upper">
+                                                        <div class="filters">
+                                                            <div class="filter filter_toprated">Top Rated</div>
+                                                            <div class="filter filter_3d">3D</div>
+                                                        </div>
+                                                        <div class="link">
+                                                            <div class="icon" style="mask-image: url(Images/Link.png);"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="middle">
+                                                        <h1>Fit Blast: Toon Cube Puzzle</h1>
+                                                        <p>Fit Blast is a fast-paced puzzle game where you fit shapes and blast through levels.</p>
+                                                        <button onclick="showDetails(5)">See Details</button>
+                                                    </div>
+                                                    <div class="lower">
+                                                        <div class="metrics">
+                                                            <div class="metric">
+                                                                <div class="icon" style="mask-image: url(Images/Download.png);"></div>
+                                                                <div class="text">1M+</div>
+                                                            </div>
+                                                            <div class="metric">
+                                                                <div class="text">4.8★</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="resume" id="resume_section">
+                            <div class="resume_inner">
+
+                                <h1>Professional Background</h1>
+
+                                <div class="resume_cards">
+
+                                    <div class="resume_card">
+                                        <div class="left">
+                                            <div class="circle"><div></div></div><div class="line"></div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="heading">
+                                                <h1>Senior Software Developer</h1><p>| Mindstorm Studios</p>
+                                            </div>
+                                            <p>2020-Present</p>
+                                            <div class="textbox">
+                                                <div class="text">
+                                                    <p>Leading the development of a Unity-based mobile application for music and dance educators, featuring rhythm-based gameplay and a layered music playback system. Designed the architecture to support real-time engagement, scalable content, and personalized audio interaction.</p>
+                                                </div>
+                                                <div class="text">
+                                                    <p>Architected the backend using Firebase Realtime Database to handle user profiles, daily streaks, reward systems, and layered song data.</p>
+                                                </div>
+                                                <div class="text">
+                                                    <p>Architected the backend using Firebase Realtime Database to handle user profiles, daily streaks, reward systems, and layered song data.</p>
+                                                </div>
+                                                <div class="text">
+                                                    <p>Architected the backend using Firebase Realtime Database to handle user profiles, daily streaks, reward systems, and layered song data.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="resume_card">
+                                        <div class="left">
+                                            <div class="circle"><div></div></div><div class="line"></div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="heading">
+                                                <h1>Senior Software Developer</h1><p>| Mindstorm Studios</p>
+                                            </div>
+                                            <p>2020-Present</p>
+                                            <div class="textbox">
+                                                <div class="text">
+                                                    <p>Leading the development of a Unity-based mobile application for music and dance educators, featuring rhythm-based gameplay and a layered music playback system. Designed the architecture to support real-time engagement, scalable content, and personalized audio interaction.</p>
+                                                </div>
+                                                <div class="text">
+                                                    <p>Architected the backend using Firebase Realtime Database to handle user profiles, daily streaks, reward systems, and layered song data.</p>
+                                                </div>
+                                                <div class="text">
+                                                    <p>Architected the backend using Firebase Realtime Database to handle user profiles, daily streaks, reward systems, and layered song data.</p>
+                                                </div>
+                                                <div class="text">
+                                                    <p>Architected the backend using Firebase Realtime Database to handle user profiles, daily streaks, reward systems, and layered song data.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="resume_card">
+                                        <div class="left">
+                                            <div class="circle"><div></div></div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="heading">
+                                                <h1>Senior Software Developer</h1><p>| Mindstorm Studios</p>
+                                            </div>
+                                            <p>2020-Present</p>
+                                            <div class="textbox">
+                                                <div class="text">
+                                                    <p>Leading the development of a Unity-based mobile application for music and dance educators, featuring rhythm-based gameplay and a layered music playback system. Designed the architecture to support real-time engagement, scalable content, and personalized audio interaction.</p>
+                                                </div>
+                                                <div class="text">
+                                                    <p>Architected the backend using Firebase Realtime Database to handle user profiles, daily streaks, reward systems, and layered song data.</p>
+                                                </div>
+                                                <div class="text">
+                                                    <p>Architected the backend using Firebase Realtime Database to handle user profiles, daily streaks, reward systems, and layered song data.</p>
+                                                </div>
+                                                <div class="text">
+                                                    <p>Architected the backend using Firebase Realtime Database to handle user profiles, daily streaks, reward systems, and layered song data.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="services" id="services_section">
+                            <div class="services_inner">
+                                <div class="cards">
+                                    
+                                    <div class="top">
+                                        <div class="card_service left">
+                                            <h1>Prototyping and<br>MVP Development</h1>
+                                            <p>Quick, playable builds to test ideas, show investors, or validate gameplay.</p>
+                                        </div>
+                                        <div class="right">
+                                            <div class="card_service top">
+                                                <h1>Monetization<br>Integration</h1>
+                                                <p>In-app purchases, rewarded ads, subscriptions, economy systems.</p>
+                                            </div>
+                                            <div class="card_service bottom">
+                                                <h1>Core Gameplay<br>Programming</h1>
+                                                <p>In-app purchases, rewarded ads, subscriptions, economy systems.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bottom">
+                                        <div class="card_service left">
+                                            <h1>Game<br>Optimization</h1>
+                                            <p>In-app purchases, rewarded ads, subscriptions, economy systems.</p>
+                                        </div>
+                                        <div class="card_service right">
+                                            <h1>Full Mobile Game<br>Development</h1>
+                                            <p>End-to-end design, coding, and publishing of complete mobile games.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="testimonies" id="testimonies_section">
+                            <div class="testimonies_inner">
+
+                                <div class="cards" id="testimonies_cards_container">
+                                    <div class="cards_inner" id="testimonies_cards">
+
+                                        <div class="card">
+                                            <div class="card_inner">
+                                                <div class="pfp" style="background-image: url(Images/testimonies/testimony4.jpg);"></div>
+                                                <div class="name">Ali Kazim</div>
+                                                <div class="position">Creative Director, Couchﬂix Studios</div>
+                                                <p>Working with him completely transformed our project timeline. He consistently delivered ahead of schedule, identified technical roadblocks before they became issues, and brought a level of polish that exceeded our expectations.</p>
+                                                <div class="stars">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card_inner">
+                                                <div class="pfp" style="background-image: url(Images/testimonies/testimony2.jpg);"></div>
+                                                <div class="name">Jamal Sheikh</div>
+                                                <div class="position">CEO of Techstract</div>
+                                                <p>Always composed under pressure and incredibly solution-focused. Their ability to debug and optimize on the fly saved our launch more than once.</p>
+                                                <div class="stars">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card_inner">
+                                                <div class="pfp" style="background-image: url(Images/testimonies/testimony3.jpg);"></div>
+                                                <div class="name">Jane McGonigal</div>
+                                                <div class="position">Game Designer & Author, New York, USA</div>
+                                                <p>Abdul Ahad approaches challenges as opportunities. His creativity shines, but so does his ability to solve complex technical issues without sacrificing fun. It’s rare to find that blend, and it made all the difference in our collaboration.</p>
+                                                <div class="stars">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card_inner">
+                                                <div class="pfp" style="background-image: url(Images/testimonies/testimony1.jpg);"></div>
+                                                <div class="name">Wajeeh Naqvi</div>
+                                                <div class="position">CEO Codekrux</div>
+                                                <p>One of the most dependable and detail-oriented developers I’ve worked with. They don’t just write code — they think holistically about user experience, performance, and scalability.</p>
+                                                <div class="stars">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card_inner">
+                                                <div class="pfp" style="background-image: url(Images/testimonies/testimony5.jpg);"></div>
+                                                <div class="name">Rami Ismail</div>
+                                                <div class="position">Indie Game Developer & Speaker, Netherlands</div>
+                                                <p>Abdul Ahad brings genuine passion and professional rigor to his work. When I reviewed his builds, I saw clean code, thoughtful design, and careful optimisation. It’s clear he cares about both the craft and the player’s experience.</p>
+                                                <div class="stars">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                    <img src="Images/star.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="cta" onclick="downloadResume()">Let's Work Together</div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="section_sidebar">
+                <div class="section_sidebar_window" id="sidebar_window">
+                    <div class="section_sidebar_window_inner">
+
+                        <div class="sidebar">
+                            <div class="sidebar_inner">
+
+                                <div class="profile">
+                                    <div class="profile_inner">
+                                        <div class="image"></div>
+                                        <div class="name">Abdul Ahad</div>
+                                        <div class="title">Game Designer<br>& Developer</div>
+                                        <div class="text">With 6+ years of experience, I bring value to every project</div>
+                                        <div class="download" onclick="downloadResume()">Download CV</div>
+                                    </div>
+                                    <div class="socials">
+                                        <div class="icon" onclick="openLink('https://www.x.com')" style="mask-image: url(Images/twitter.png);"></div>
+                                        <div class="icon" onclick="openLink('https://www.linkedin.com')" style="mask-image: url(Images/linkedin.png);"></div>
+                                        <div class="icon" onclick="openLink('https://www.facebook.com')" style="mask-image: url(Images/facebook.png);"></div>
+                                        <div class="icon" onclick="openLink('https://www.youtube.com')" style="mask-image: url(Images/youtube.png);"></div>
+                                    </div>
+                                </div>
+
+                                <div class="links">
+                                    <div class="link" id="home_link">
+                                        <div class="icon" style="mask-image: url(Images/home.png);"></div>
+                                        <div class="link_text">Home</div>
+                                    </div>
+                                    <div class="link" id="work_link">
+                                        <div class="icon" style="mask-image: url(Images/work.png);"></div>
+                                        <div class="link_text">Work</div>
+                                    </div>
+                                    <div class="link" id="resume_link">
+                                        <div class="icon" style="mask-image: url(Images/resume.png);"></div>
+                                        <div class="link_text">Resume</div>
+                                    </div>
+                                    <div class="link" id="services_link">
+                                        <div class="icon" style="mask-image: url(Images/services.png);"></div>
+                                        <div class="link_text">Services</div>
+                                    </div>
+                                    <div class="link" id="testimonies_link">
+                                        <div class="icon" style="mask-image: url(Images/testimony.png);"></div>
+                                        <div class="link_text">Testimonies</div>
+                                    </div>
+                                    <div class="link" id="contact_link" onclick="showContact()">
+                                        <div class="icon" style="mask-image: url(Images/contact.png);"></div>
+                                        <div class="link_text">Contact Us</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="section_details" id="details_section">
+                <div class="details_inner">
+                    <div class="panel">
+                        <div class="panel_inner" id="details_panel">
+
+
+                            <div class="images" id="details_images_container">
+                                <div class="images_inner" id="details_images">
+                                    <div class="image"></div>
+                                    <div class="image"></div>
+                                    <div class="image"></div>
+                                    <div class="image"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="filters" id="details_filters">
+                                <div class="filter filter_toprated">Top Rated</div>
+                                <div class="filter filter_3d">3D</div>
+                            </div>
+
+                            <div class="heading">
+                                <h1 id="details_heading" >Fit Blast: Toon Cube Puzzle</h1>
+                                <div class="link" id="details_link">
+                                    <div class="icon"></div>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p id="details_description">Take control of a magnetic hero, collect building pieces, dodge enemies, and unleash massive explosions to unlock gates and clear levels.</p>
+                            </div>
+
+                            
+                            <div class="metrics">
+                                <div class="metric">
+                                    <div class="icon" style="mask-image: url(Images/Download.png);"></div>
+                                    <div class="text" id="details_downloads">500M+</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="text" id="details_ratings">4.8★</div>
+                                </div>
+                            </div>
+
+
+                            <div class="section_heading">Unique Selling Point</div>
+                            <div class="textbox">
+                                <div class="section_text">
+                                    <p id="details_usp">A dynamic magnet system that lets you pull, merge, and blast objects into spectacular explosions—capable of handling 10,000+ cubes blowing up at once—delivering visually stunning chaos while keeping gameplay buttery smooth across PC and mobile.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="section_heading">Key Features</div>
+                            <div class="textbox" id="details_keyfeatures">
+                                <div class="section_text">
+                                    <p><b>Fresh Levels Every Time</b> - Levels generate dynamically, so every playthrough feels new.</p>
+                                </div>
+                                <div class="section_text">
+                                    <p><b>Magnetic Pull</b> - Attract and combine objects in a visually unique way.</p>
+                                </div>
+                                <div class="section_text">
+                                    <p><b>Magnetic Pull</b> - Attract and combine objects in a visually unique way.</p>
+                                </div>
+                            </div>
+
+                            <div class="section_heading">Technical Details</div>
+                            <div class="textbox" id="details_technicaldetails">
+                                <div class="section_text">
+                                    <p><b>Fresh Levels Every Time</b> - Levels generate dynamically, so every playthrough feels new.</p>
+                                </div>
+                                <div class="section_text">
+                                    <p><b>Magnetic Pull</b> - Attract and combine objects in a visually unique way.</p>
+                                </div>
+                                <div class="section_text">
+                                    <p><b>Magnetic Pull</b> - Attract and combine objects in a visually unique way.</p>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_contact" id="contact_section">
+                <div class="contact">
+                    <div class="contact_inner">
+                        <div class="image"></div>
+                        <div class="name">Abdul Ahad</div>
+                        <div class="title">Game Designer & Developer</div>
+                        <div class="subtext">Let's Get In Touch</div>
+                        <div class="email">
+                            <p>abdulahad7959@gmail.com</p>
+                        </div>
+                        <div class="split">
+                            <div class="div"></div>
+                            <p>or</p>
+                            <div class="div"></div>
+                        </div>
+                        <div class="phone">
+                            <p>+92 315 0346161</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_menu">
+                <div class="menu" id="menu_button"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="Script/window.js"></script>
+    <script src="Script/home.js"></script>
+    <script src="Script/work.js"></script>
+    <script src="Script/resume.js"></script>
+    <script src="Script/services.js"></script>
+    <script src="Script/testimonies.js"></script>
+</body>
+</html>

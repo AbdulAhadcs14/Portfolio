@@ -1,0 +1,482 @@
+.section_details{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    display: none;
+}
+
+.details_inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.panel{
+    width: 40%;
+    height: 90%;
+    background-color: rgb(19, 19, 19);
+    border-radius: 0.6vw;
+    position: relative;
+    pointer-events: all;
+    overflow: hidden;
+    border: 1px solid rgb(55, 55, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.panel_inner{
+    width: calc(100% - 4vw);
+    height: calc(100% - 4vw);
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Chrome, Safari, Opera */
+.panel_inner::-webkit-scrollbar {
+    display: none;
+}
+
+.panel_inner > .images{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.panel_inner > .images > .images_inner{
+    display: flex;
+    flex-wrap: nowrap; /* force all cards in one row */
+    gap: 5px; /* spacing between cards */
+    transition: 0.5s ease-out;
+    overflow: visible;
+    user-select: none;
+    -webkit-user-select: none; /* For Safari */
+    width: 100%;
+}
+
+.panel_inner > .images > .images_inner > .image{
+    flex: 0 0 28%; /* don't shrink, don't grow, keep 30% width */
+    background-color: white;
+    border-radius: 0.5vw;
+    aspect-ratio: 155/277;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    background-image: url(../Images/products/product1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.panel_inner > .filters{
+    width: 100%;
+    height: fit-content;
+    margin-top: 2vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3px;
+}
+
+.panel_inner > .filters > .filter{
+    font-size: 0.7vw;
+    color: rgb(255, 255, 255);
+    padding: 0.2vw 0.7vw;
+    font-weight: 300;
+    font-family: var(--inter);
+    cursor: pointer;
+    user-select: none;
+    border-radius: 100px;
+    border: 1px solid white;
+}
+
+
+.panel_inner > .filters > .filter_toprated{
+    border-color: #FFF2D9;
+    color: #FFF2D9;
+}
+
+.panel_inner > .filters > .filter_3d{
+    border-color: #D9F5FF;
+    color: #D9F5FF;
+}
+
+.panel_inner > .heading{
+    width: 100%;
+    height: fit-content;
+    margin-top: 1.4vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.panel_inner > .heading > h1{
+    font-size: 1.8vw;
+    color: white;
+    font-family: var(--inter);
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+.panel_inner > .heading > .link{
+    width: 2vw;
+    aspect-ratio: 1/1;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 0.3vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5vw;
+
+}
+
+
+.panel_inner > .heading > .link > .icon{
+    width: 1vw;
+    aspect-ratio: 1/1;
+    background-color: rgb(208, 208, 208);
+    mask-image: url(../Images/Link.png);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transform: translate(5%, -5%);
+}
+
+.panel_inner > .description{
+    width: 100%;
+    height: fit-content;
+    margin-top: 0.5vw;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.panel_inner > .description > p{
+    font-size: 0.8vw;
+    color: rgb(200, 200, 200);
+    font-family: var(--inter);
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+
+.panel_inner > .metrics{
+    width: 100%;
+    height: fit-content;
+    margin-top: 1.4vw;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3px;
+}
+
+.panel_inner > .metrics > .metric{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3vw;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 1.5vw 1.5vw;
+    border-radius: calc(0.5vw);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.panel_inner > .metrics > .metric > .icon{
+    width: 0.9vw;
+    aspect-ratio: 1/1;
+    background-color: rgb(208, 208, 208);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+.panel_inner > .metrics > .metric > .text{
+    font-size: 0.8vw;
+    color: white;
+    font-family: var(--inter);
+    font-weight: 400;
+}
+
+.panel_inner > .section_heading{
+    width: 100%;
+    height: fit-content;
+    margin-top: 3vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    font-family: var(--inter);
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1vw;
+
+}
+
+
+.panel_inner > .textbox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.panel_inner > .textbox > .section_text{
+    width: calc(100% - 2px);
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    font-family: var(--inter);
+    font-size: 0.9vw;
+    font-weight: 300;
+    font-size: 0.8vw;
+    color: rgb(200, 200, 200);
+    font-family: var(--inter);
+    font-weight: 300;
+    line-height: 1.2;
+
+    background-color: black;
+    border-radius: calc(0.5vw);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+.panel_inner > .textbox > .section_text > p{
+    margin: 0;
+    padding: 0;
+    margin: 1.5vw;
+}
+
+
+.panel_inner > .textbox > .section_text > p > b{
+    color: white;
+}
+
+@media (max-width: 1366px) {
+    /* Add styles for screens up to 1366px */
+
+}
+
+@media (max-width: 940px) {
+    /* Add styles for screens up to 900px */    
+
+    .panel{
+        width: 70%;
+        height: 80%;
+        border-radius: 1.2vw;
+
+    }
+
+    .panel_inner{
+        width: calc(100% - 6vw);
+        height: calc(100% - 6vw);
+    }
+
+    .panel_inner > .images > .images_inner > .image{
+        flex: 0 0 30%;
+    }
+
+    .panel_inner > .filters{
+        margin-top: 4vw;
+    }
+
+    .panel_inner > .filters > .filter{
+        font-size: 1.2vw;
+        padding: 0.4vw 1.2vw;
+    }
+
+    .panel_inner > .heading{
+        margin-top: 3vw;
+    }
+
+    .panel_inner > .heading > h1{
+        font-size: 3vw;
+    }
+
+    .panel_inner > .heading > .link{
+        width: 4vw;
+        border-radius: 0.6vw;
+        margin-left: 1vw;
+    }
+
+    .panel_inner > .heading > .link > .icon{
+        width: 2vw;
+    }
+
+    .panel_inner > .description{
+        margin-top: 0.5vw;
+    }
+
+    .panel_inner > .description > p{
+        font-size: 1.5vw;
+    }
+
+    .panel_inner > .metrics{
+        margin-top: 3vw;
+    }
+
+    .panel_inner > .metrics > .metric{
+        gap: 0.6vw;
+        padding: 2.5vw 2.5vw;
+        border-radius: calc(0.5vw);
+    }
+
+    .panel_inner > .metrics > .metric > .icon{
+        width: 1.6vw;
+    }
+
+    .panel_inner > .metrics > .metric > .text{
+        font-size: 1.4vw;
+    }
+
+    .panel_inner > .section_heading{
+        margin-top: 5vw;
+        font-size: 2vw;
+        margin-bottom: 1vw;
+
+    }
+
+    .panel_inner > .textbox{
+        gap: 3px;
+    }
+
+    .panel_inner > .textbox > .section_text{
+        font-size: 0.9vw;
+        font-size: 1.5vw;
+        border-radius: calc(0.8vw);
+    }
+
+
+    .panel_inner > .textbox > .section_text > p{
+        margin: 0;
+        padding: 0;
+        margin: 2.5vw;
+    }
+
+}
+
+@media (max-width: 480px) {
+    /* Add styles for screens up to 900px */    
+
+    .panel{
+        width: 80%;
+        height: 80%;
+        border-radius: 1.2vw;
+
+    }
+
+    .panel_inner{
+        width: calc(100% - 7vw);
+        height: calc(100% - 7vw);
+    }
+
+    .panel_inner > .images > .images_inner > .image{
+        flex: 0 0 40%;
+    }
+
+    .panel_inner > .filters{
+        margin-top: 5vw;
+    }
+
+    .panel_inner > .filters > .filter{
+        font-size: 1.8vw;
+        padding: 0.7vw 1.8vw;
+    }
+
+    .panel_inner > .heading{
+        margin-top: 5vw;
+    }
+
+    .panel_inner > .heading > h1{
+        font-size: 4vw;
+    }
+
+    .panel_inner > .heading > .link{
+        width: 5vw;
+        border-radius: 0.6vw;
+        margin-left: 1vw;
+    }
+
+    .panel_inner > .heading > .link > .icon{
+        width: 3vw;
+    }
+
+    .panel_inner > .description{
+        margin-top: 1vw;
+    }
+
+    .panel_inner > .description > p{
+        font-size: 2.2vw;
+    }
+
+    .panel_inner > .metrics{
+        margin-top: 5vw;
+    }
+
+    .panel_inner > .metrics > .metric{
+        gap: 1vw;
+        padding: 3.5vw 3.5vw;
+        border-radius: calc(1vw);
+    }
+
+    .panel_inner > .metrics > .metric > .icon{
+        width: 2.2vw;
+    }
+
+    .panel_inner > .metrics > .metric > .text{
+        font-size: 2vw;
+    }
+
+    .panel_inner > .section_heading{
+        margin-top: 8vw;
+        font-size: 2.8vw;
+        margin-bottom: 1.5vw;
+
+    }
+
+    .panel_inner > .textbox{
+        gap: 3px;
+    }
+
+    .panel_inner > .textbox > .section_text{
+        font-size: 2.2vw;
+        border-radius: calc(1vw);
+    }
+
+
+    .panel_inner > .textbox > .section_text > p{
+        margin: 0;
+        padding: 0;
+        margin: 3.5vw;
+    }
+
+}

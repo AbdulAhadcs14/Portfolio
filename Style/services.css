@@ -1,0 +1,325 @@
+.services{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+
+    overflow: hidden;
+    border-radius: 0.6vw;
+}
+
+.services_inner{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+
+    overflow: hidden;
+}
+
+.services_inner > h1{
+    font-size: 3vw;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.services_inner > .cards{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.6vw;
+}
+
+
+.services_inner > .cards > .top{
+    width: 100%;
+    flex: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6vw;
+}
+
+.services_inner > .cards > .top > .left{
+    height: 100%;
+    flex: 2;
+
+    display: flex;
+    justify-content: start;
+    
+
+    background-image: url(../Images/service1BG.jpg);
+    background-position: top center;
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
+.services_inner > .cards > .top > .left > h1{
+    font-weight: 500;
+    margin-top: 5vw;
+    margin-left: 3vw;
+    font-size: 3vw;
+
+}
+
+.services_inner > .cards > .top > .left > p{
+    color: black;
+    width: 50%;
+    margin-bottom: 0vw;
+    margin-left: 3vw;
+
+}
+
+.services_inner > .cards > .top > .right{
+    height: 100%;
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.6vw;
+}
+
+.services_inner > .cards > .top > .right > .top{
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+    justify-content: end;
+    background-image: linear-gradient(to bottom, rgba(147, 217, 255, 0.22), rgba(255, 255, 255, 0.12));
+}
+
+.services_inner > .cards > .top > .right > .bottom{
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+    justify-content: end;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.services_inner > .cards > .bottom{
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6vw;
+}
+
+.services_inner > .cards > .bottom > .left{
+    height: 100%;
+    flex: 1;
+
+    display: flex;
+    justify-content: end;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
+}
+
+.services_inner > .cards > .bottom > .right{
+    height: 100%;
+    flex: 2;
+
+    display: flex;
+    justify-content: center;
+
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.178);
+    background-image: url(../Images/service2BG.jpg);
+}
+
+.services_inner > .cards > .bottom > .right > h1{
+    color: black;
+    margin-left: 3vw;
+
+}
+
+.services_inner > .cards > .bottom > .right > p{
+    color: black;
+    margin-bottom: 0vw;
+    margin-left: 3vw;
+
+}
+
+.card_service{
+    border-radius: 0.6vw;
+    flex-direction: column;
+    align-items: start;
+
+    background-size: cover;
+    background-position: center;
+
+    backdrop-filter: blur(2vw);
+}
+
+.card_service > h1{
+    font-size: 1.5vw;
+    color: white;
+    font-family: var(--inter);
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    margin-left: 2vw;
+    margin-bottom: 0.5vw;
+}
+
+.card_service > p{
+    width: fit-content;
+    font-size: 1vw;
+    color: white;
+    font-family: var(--inter);
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 3vw;
+}
+
+
+@media (max-width: 1366px) {
+    /* Add styles for screens up to 1366px */
+
+}
+
+@media (max-width: 940px) {
+    /* Add styles for screens up to 900px */    
+
+    .card_service{
+        border-radius: 1vw;
+    }
+
+    .services{
+        height: 80%;
+
+    }
+
+    .card_service > h1{
+        font-size: 2.5vw;
+        margin-left: 3vw;
+        margin-bottom: 0.8vw;
+    }
+
+    .card_service > p{
+        font-size: 1.8vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        margin-bottom: 4vw;
+    }
+
+    .services_inner > .cards > .bottom > .right > h1{
+        margin-left: 3vw;
+
+    }
+
+    .services_inner > .cards > .bottom > .right > p{
+        margin-bottom: 0vw;
+        margin-left: 3vw;
+
+    }
+
+    .services_inner > .cards > .top > .left > h1{
+        margin-top: 5vw;
+        margin-left: 3vw;
+        font-size: 4vw;
+
+    }
+
+    .services_inner > .cards > .top > .left > p{
+        width: 60%;
+        margin-bottom: 0vw;
+        margin-left: 3vw;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+    /* Add styles for screens up to 480px */
+
+
+    .card_service{
+        border-radius: 1vw;
+    }
+
+    .services{
+        height: 80%;
+
+    }
+
+    .services_inner > .cards > .top{
+        flex: 2;
+        flex-direction: column;
+    }
+
+    .services_inner > .cards > .top > .right > .top{
+        height: 100%;
+    }
+
+    .services_inner > .cards > .top > .right > .bottom{
+        height: 100%;
+    }
+
+    .services_inner > .cards > .top > .right{
+        flex: 2;
+        flex-direction: row;
+    }
+
+    .services_inner > .cards > .bottom > .left{
+        flex: 2;
+
+    }
+
+    .card_service > h1{
+        font-size: 4vw;
+        margin-left: 3vw;
+        margin-bottom: 1.2vw;
+    }
+
+    .card_service > p{
+        font-size: 2.5vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        margin-bottom: 6vw;
+    }
+
+    .services_inner > .cards > .bottom > .right > h1{
+        margin-left: 3vw;
+
+    }
+
+    .services_inner > .cards > .bottom > .right > p{
+        margin-bottom: 0vw;
+        margin-left: 3vw;
+        font-weight: 400;
+
+    }
+
+    .services_inner > .cards > .top > .left > h1{
+        margin-top: 8vw;
+        margin-left: 3vw;
+        font-size: 5.5vw;
+
+    }
+
+    .services_inner > .cards > .top > .left > p{
+        width: 80%;
+        margin-bottom: 0vw;
+        margin-left: 3vw;
+        font-weight: 400;
+
+    }
+}

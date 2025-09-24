@@ -1,0 +1,393 @@
+.sidebar{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+
+    overflow: hidden;
+}
+
+.sidebar_inner{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.profile{
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: black;
+    border-radius: 0.6vw;
+
+    background-image: url(../Images/profileBG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.socials{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2vw;
+
+    margin-bottom: 1vw;
+    display: none;
+}
+
+.socials > .icon{
+    width: 1.4vw;
+    height: 1.4vw;
+
+    mask-size: cover;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: white;
+
+    cursor: pointer;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.socials > .icon:hover{
+    transform: scale(1.2);
+}
+
+.profile_inner{
+    width: 90%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.profile_inner > .image{
+    width: 8vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    background-image: url(../Images/profilePic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile_inner > .name{
+    margin-top: 0.6vw;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9vw;
+    font-weight: 400;
+    font-family: var(--josefin-sans);
+}
+
+.profile_inner > .title{
+    margin-top: 1.6vw;
+    color: white;
+    font-size: 1.2vw;
+    text-align: center;
+    font-weight: 400;
+    font-family: var(--josefin-sans);
+}
+
+.profile_inner > .text{
+    margin-top: 0.3vw;
+    width: 80%;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8vw;
+    font-weight: 300;
+    font-family: var(--josefin-sans);
+    text-align: center;
+}
+
+.profile_inner > .download{
+    margin-top: 1.6vw;
+    width: fit-content;
+    height: fit-content;
+
+    padding: 0.8vw 1.2vw;
+    border: 2px solid white;
+    border-radius: 100px;
+
+    color: white;
+    font-size: 0.8vw;
+    font-weight: 400;
+    font-family: var(--josefin-sans);
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.profile_inner > .download:hover{
+    background-color: white;
+    color: black;
+}
+
+.links{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: black;
+    gap: 3px;
+    border-radius: 0.6vw;
+    padding: 3px 0px;
+    overflow: hidden;
+}
+
+.links > .link{
+    width: calc(100% - 6px);
+    height: fit-content;
+
+    background-color: #212121;
+    border-radius: calc(0.6vw - 3px);
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    padding: 1.2vw 0px;
+    cursor: pointer;
+    
+}
+
+.links > .link:hover{
+    background-color: #3e3e3e;
+}
+
+.links > .link > .icon{
+    width: 1vw;
+    height: 1vw;
+
+    mask-size: cover;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: white;
+
+    margin-left: 1vw;
+
+}
+
+.links > .link > .link_text{
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-0.75vw);
+    color: white;
+    font-size: 0.9vw;
+    font-weight: 400;
+    font-family: var(--josefin-sans);
+}
+
+.links > .link_active{
+    background-color: #ffffff;
+    cursor: default;
+}
+
+.links > .link_active:hover{
+    background-color: #ffffff;
+}
+
+.links > .link_active > .link_text{
+    color: black;
+}
+
+.links > .link_active > .icon{
+    background-color: black;
+}
+
+@media (max-width: 1366px) {
+    /* Add styles for screens up to 1366px */
+
+
+}
+
+@media (max-width: 940px) {
+    /* Add styles for screens up to 900px */
+
+    .profile{
+        border-radius: 1.2vw;
+    }
+
+    .profile_inner > .image{
+        width: 24vw;
+    }
+
+    .profile_inner > .name{
+        margin-top: 1.6vw;
+        font-size: 2.4vw;
+    }
+
+    .profile_inner > .title{
+        margin-top: 4vw;
+        font-size: 3.5vw;
+    }
+
+    .profile_inner > .text{
+        margin-top: 1vw;
+        width: 80%;
+        font-size: 2vw;
+    }
+
+    .profile_inner > .download{
+        margin-top: 4vw;
+
+        padding: 2vw 4vw;
+        border: 2px solid white;
+        border-radius: 100px;
+
+        font-size: 2vw;
+    }
+
+    .profile_inner > .download:hover{
+        background-color: white;
+        color: black;
+    }
+
+
+    .socials{
+        gap: 4vw;
+
+        margin-bottom: 3vw;
+    }
+
+    .socials > .icon{
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .links{
+        gap: 3px;
+        border-radius: 1.2vw;
+        padding: 3px 0px;
+    }
+
+    .links > .link{
+        width: calc(100% - 6px);
+        border-radius: calc(1.2vw - 3px);
+
+        padding: 3vw 0px;
+        
+    }
+
+    .links > .link > .icon{
+        width: 3vw;
+        height: 3vw;
+
+        margin-left: 2vw;
+
+    }
+
+    .links > .link > .link_text{
+        transform: translateX(-2.4vw);
+        font-size: 2.2vw;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Add styles for screens up to 480px */
+
+
+    .profile{
+        border-radius: 1.2vw;
+    }
+    
+    .profile_inner > .image{
+        width: 28vw;
+    }
+
+    .profile_inner > .name{
+        margin-top: 1.6vw;
+        font-size: 3.5vw;
+    }
+
+    .profile_inner > .title{
+        margin-top: 5vw;
+        font-size: 4vw;
+    }
+
+    .profile_inner > .text{
+        margin-top: 1.6vw;
+        width: 60%;
+        font-size: 3.2vw;
+    }
+
+    .profile_inner > .download{
+        margin-top: 6vw;
+
+        padding: 3vw 5vw;
+        border: 2px solid white;
+        border-radius: 100px;
+
+        font-size: 3.2vw;
+    }
+
+    .profile_inner > .download:hover{
+        background-color: white;
+        color: black;
+    }
+
+
+    .socials{
+        gap: 4vw;
+
+        margin-bottom: 5vw;
+    }
+
+    .socials > .icon{
+        width: 5.5vw;
+        height: 5.5vw;
+    }
+
+    .links{
+        gap: 3px;
+        border-radius: 1.2vw;
+        padding: 3px 0px;
+    }
+
+    .links > .link{
+        width: calc(100% - 6px);
+        border-radius: calc(1.2vw - 3px);
+
+        padding: 4vw 0px;
+        
+    }
+
+    .links > .link > .icon{
+        width: 4vw;
+        height: 4vw;
+
+        margin-left: 4vw;
+
+    }
+
+    .links > .link > .link_text{
+        transform: translateX(-3.2vw);
+        font-size: 3.2vw;
+    }
+}

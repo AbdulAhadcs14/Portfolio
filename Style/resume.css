@@ -1,0 +1,338 @@
+.resume{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+
+    overflow: hidden;
+    border-radius: 0.6vw;
+}
+
+.resume_inner{
+    width: 60%;
+    height: fit-content;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+}
+
+.resume_inner > h1{
+    width: fit-content;
+    height: fit-content;
+
+    font-family: var(--inter);
+    color: white;
+    font-size: 3vw;
+    font-weight: 500;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    margin: 12vh 0 12vh 0;
+}
+
+.resume_inner > .resume_cards{
+    width: calc(100% - 6vw);
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(2vw);
+    border-radius: 1vw;
+    padding: 6vw 3vw 0 3vw;
+
+    position: relative;
+}
+
+.resume_inner > .resume_cards > .resume_card{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+
+    position: relative;
+}
+
+.resume_inner > .resume_cards > .resume_card > .left{
+    width: fit-content;
+
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.resume_inner > .resume_cards > .resume_card > .left > .circle{
+    width: 1.3vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 1px solid #FFC386;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.resume_inner > .resume_cards > .resume_card > .left > .circle > div{
+    width: 1vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #FFC386;
+}
+
+.resume_inner > .resume_cards > .resume_card > .left > .line{
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.resume_inner > .resume_cards > .resume_card > .right{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-left: 2vw;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 5vw;
+    transform: translateY(-0.5vw);
+
+}
+
+.resume_inner > .resume_cards > .resume_card > .right > .heading{
+    width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.resume_inner > .resume_cards > .resume_card > .right > .heading > h1{
+    font-family: var(--inter);
+    color: white;
+    font-size: 1.6vw;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.resume_inner > .resume_cards > .resume_card > .right > .heading > p{
+    font-family: var(--inter);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9vw;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    margin-left: 0.4vw;
+}
+
+.resume_inner > .resume_cards > .resume_card > .right > p{
+    font-family: var(--inter);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9vw;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+
+.resume_inner > .resume_cards > .resume_card > .right > .textbox{
+    width: 100%;
+    height: fit-content;
+    margin-top: 1vw;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 3px 0px;
+    gap: 3px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.6vw;
+}
+
+
+.resume_inner > .resume_cards > .resume_card > .right > .textbox > .text{
+    width: calc(100% - 6px);
+    font-family: var(--inter);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9vw;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    margin: 0px 3px;
+    background-color: black;
+    border-radius: calc(0.6vw - 3px);
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.resume_inner > .resume_cards > .resume_card > .right > .textbox > .text > p{
+    margin: 0;
+    padding: 0;
+    margin: 1vw 1vw;
+}
+
+
+@media (max-width: 1366px) {
+    /* Add styles for screens up to 1366px */
+
+}
+
+@media (max-width: 940px) {
+    /* Add styles for screens up to 900px */    
+
+
+
+    .resume_inner{
+        width: 80%;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .resume_inner > h1{
+        font-size: 4vw;
+        margin: 8vh 0 6vh 0;
+    }
+
+    .resume_inner > .resume_cards{
+        width: calc(100% - 8vw);
+        backdrop-filter: blur(3vw);
+        border-radius: 2vw;
+        padding: 8vw 3vw 0 4vw;
+    }
+
+    .resume_inner > .resume_cards > .resume_card > .left > .circle{
+        width: 1.8vw;
+    }
+
+
+    .resume_inner > .resume_cards > .resume_card > .left > .circle > div{
+        width: 1.3vw;
+    }
+
+    .resume_inner > .resume_cards > .resume_card > .right{
+        margin-left: 3vw;
+        margin-bottom: 10vw;
+        transform: translateY(-0.5vw);
+
+    }
+
+    .resume_inner > .resume_cards > .resume_card > .right > .heading > h1{
+        font-size: 2.2vw;
+    }
+
+    .resume_inner > .resume_cards > .resume_card > .right > .heading > p{
+        font-size: 1.6vw;
+        margin-left: 0.7vw;
+    }
+
+    .resume_inner > .resume_cards > .resume_card > .right > p{
+        font-size: 1.6vw;
+    }
+
+
+    .resume_inner > .resume_cards > .resume_card > .right > .textbox{
+        margin-top: 1.6vw;
+        border-radius: 1vw;
+    }
+
+
+    .resume_inner > .resume_cards > .resume_card > .right > .textbox > .text{
+        font-size: 1.6vw;
+        border-radius: calc(1vw - 3px);
+    }
+
+    .resume_inner > .resume_cards > .resume_card > .right > .textbox > .text > p{
+        margin: 1.6vw 1.6vw;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    /* Add styles for screens up to 480px */
+
+
+    .resume_inner{
+        width: 90%;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .resume_inner > h1{
+        font-size: 5.5vw;
+        margin: 4vh 0 6vh 0;
+    }
+
+    .resume_inner > .resume_cards{
+        width: calc(100% - 8vw);
+        backdrop-filter: blur(3vw);
+        border-radius: 2vw;
+        padding: 12vw 3vw 0 4vw;
+    }
+
+    .resume_inner > .resume_cards > .resume_card > .left > .circle{
+        width: 2.4vw;
+    }
+
+
+    .resume_inner > .resume_cards > .resume_card > .left > .circle > div{
+        width: 1.8vw;
+    }
+
+    .resume_inner > .resume_cards > .resume_card > .right{
+        margin-left: 3vw;
+        margin-bottom: 16vw;
+        transform: translateY(-0.8vw);
+
+    }
+
+    .resume_inner > .resume_cards > .resume_card > .right > .heading > h1{
+        font-size: 3.5vw;
+    }
+
+    .resume_inner > .resume_cards > .resume_card > .right > .heading > p{
+        font-size: 2.2vw;
+        margin-left: 0.7vw;
+    }
+
+    .resume_inner > .resume_cards > .resume_card > .right > p{
+        font-size: 2.2vw;
+    }
+
+
+    .resume_inner > .resume_cards > .resume_card > .right > .textbox{
+        margin-top: 2.5vw;
+        border-radius: 1.6vw;
+    }
+
+
+    .resume_inner > .resume_cards > .resume_card > .right > .textbox > .text{
+        font-size: 2.5vw;
+        line-height: 3vw;
+        border-radius: calc(1.6vw - 3px);
+    }
+
+    .resume_inner > .resume_cards > .resume_card > .right > .textbox > .text > p{
+        margin: 2.5vw 2.5vw;
+    }
+}

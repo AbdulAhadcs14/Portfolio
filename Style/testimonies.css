@@ -1,0 +1,258 @@
+.testimonies{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+
+    border-radius: 0.6vw;
+}
+
+.testimonies_inner{
+    width: 95%;
+    height: calc(70% + 5vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    pointer-events: all;
+}
+
+.testimonies_inner > .cta{
+    width: fit-content;
+    height: fit-content;
+    margin-top: auto;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 200px;
+
+    color: white;
+    font-family: var(--inter);
+    font-size: 1.2vw;
+    font-weight: 500;
+    padding: 1.2vw 2vw;
+    cursor: pointer;
+}
+
+.testimonies_inner > .cta:hover{
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+.testimonies_inner > .cards {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    padding-top: 5vw;
+}
+
+.testimonies_inner > .cards > .cards_inner {
+    display: flex;
+    flex-wrap: nowrap; /* force all cards in one row */
+    gap: 3px; /* spacing between cards */
+    transition: 0.5s ease-out;
+    overflow: visible;
+    user-select: none;
+    -webkit-user-select: none; /* For Safari */
+}
+
+.testimonies_inner > .cards > .cards_inner > .card {
+    flex: 0 0 30%; /* don't shrink, don't grow, keep 30% width */
+    background-color: white;
+    border-radius: 0.5vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.testimonies_inner > .cards > .cards_inner > .card > .card_inner{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+}
+
+.testimonies_inner > .cards > .cards_inner > .card > .card_inner > .pfp{
+    width: 6vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    margin-top: -3vw;
+    overflow: visible;
+}
+
+.testimonies_inner > .cards > .cards_inner > .card > .card_inner > .name{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 1vw;
+
+    font-family: var(--inter);
+    font-size: 1vw;
+    font-weight: 400;
+    color: black;
+    overflow: visible;
+}
+
+.testimonies_inner > .cards > .cards_inner > .card > .card_inner > .position{
+    width: fit-content;
+    height: fit-content;
+
+    margin-top: 0.2vw;
+    font-family: var(--inter);
+    font-size: 0.8vw;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.637);
+    overflow: visible;
+}
+
+.testimonies_inner > .cards > .cards_inner > .card > .card_inner > p{
+    width: fit-content;
+    height: fit-content;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    font-family: var(--inter);
+    font-size: 1vw;
+    font-weight: 400;
+    color: black;
+    overflow: visible;
+    text-align: center;
+}
+
+.testimonies_inner > .cards > .cards_inner > .card > .card_inner > .stars{
+    width: fit-content;
+    height: fit-content;
+
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0vw;
+}
+
+.testimonies_inner > .cards > .cards_inner > .card > .card_inner > .stars > img{
+    width: 1.5vw;
+}
+
+
+
+
+@media (max-width: 1366px) {
+    /* Add styles for screens up to 1366px */
+
+}
+
+@media (max-width: 940px) {
+    /* Add styles for screens up to 900px */  
+
+    .testimonies{
+        height: 85%;
+    }
+
+    .testimonies_inner{
+        height: calc(70% + 5vw);
+    }
+    
+    .testimonies_inner > .cards > .cards_inner > .card {
+        flex: 0 0 50%; /* don't shrink, don't grow, keep 30% width */
+        border-radius: 0.8vw;
+        height: 40vh;
+    }
+
+    .testimonies_inner > .cards > .cards_inner > .card > .card_inner > .pfp{
+        width: 12vw;
+        margin-top: -6vw;
+    }
+
+    .testimonies_inner > .cards > .cards_inner > .card > .card_inner > .name{
+        margin-top: 2vw;
+        font-size: 2vw;
+    }
+
+    .testimonies_inner > .cards > .cards_inner > .card > .card_inner > .position{
+        margin-top: 0.4vw;
+        font-size: 1.6vw;
+    }
+
+    .testimonies_inner > .cards {
+        padding-top: 7vw;
+    }
+
+    .testimonies_inner > .cards > .cards_inner > .card > .card_inner > .stars > img{
+        width: 2.5vw;
+    }
+
+    .testimonies_inner > .cards > .cards_inner > .card > .card_inner > p{
+        font-size: 1.8vw;
+    }
+
+
+    .testimonies_inner > .cta{
+        font-size: 2.4vw;
+        padding: 2.4vw 4vw;
+    }
+
+}
+
+@media (max-width: 480px) {
+    /* Add styles for screens up to 480px */
+    .testimonies{
+        height: 85%;
+    }
+
+    .testimonies_inner{
+        height: calc(75% + 5vw);
+    }
+    
+    .testimonies_inner > .cards > .cards_inner > .card {
+        flex: 0 0 65%; /* don't shrink, don't grow, keep 30% width */
+        border-radius: 0.8vw;
+        height: 40vh; 
+    }
+
+    .testimonies_inner > .cards > .cards_inner > .card > .card_inner > .pfp{
+        width: 16vw;
+        margin-top: -5vw;
+    }
+
+    .testimonies_inner > .cards > .cards_inner > .card > .card_inner > .name{
+        margin-top: 2vw;
+        font-size: 2.5vw;
+    }
+
+    .testimonies_inner > .cards > .cards_inner > .card > .card_inner > .position{
+        margin-top: 0.4vw;
+        font-size: 2vw;
+    }
+
+    .testimonies_inner > .cards {
+        padding-top: 7vw;
+    }
+
+    .testimonies_inner > .cards > .cards_inner > .card > .card_inner > .stars > img{
+        width: 3.5vw;
+    }
+
+    .testimonies_inner > .cards > .cards_inner > .card > .card_inner > p{
+        font-size: 2.8vw;
+    }
+
+
+    .testimonies_inner > .cta{
+        font-size: 3vw;
+        padding: 4.5vw 6vw;
+    }
+
+}

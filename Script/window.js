@@ -26,28 +26,28 @@ function adjustWindows() {
 
 let touchStartX = null;
 
-// window.addEventListener("touchstart", function(e) {
-//     if (e.touches.length === 1) {
-//         touchStartX = e.touches[0].clientX;
-//     }
-// });
+window.addEventListener("touchstart", function(e) {
+    if (e.touches.length === 1) {
+        touchStartX = e.touches[0].clientX;
+    }
+});
 
-// window.addEventListener("touchend", function(e) {
-//     if (touchStartX === null) return;
-//     let touchEndX = e.changedTouches[0].clientX;
-//     let diffX = touchEndX - touchStartX;
+window.addEventListener("touchend", function(e) {
+    if (touchStartX === null) return;
+    let touchEndX = e.changedTouches[0].clientX;
+    let diffX = touchEndX - touchStartX;
 
-//     if (Math.abs(diffX) > 50) {
-//         if (diffX > 0) {
-//             // Swipe right
-//             sidebar_window.style.transform = "translateX(0)";
-//         } else {
-//             // Swipe left
-//             sidebar_window.style.transform = "translateX(-100%)";
-//         }
-//     }
-//     touchStartX = null;
-// });
+    if (Math.abs(diffX) > 50) {
+        if (diffX > 0) {
+            // Swipe right
+            // sidebar_window.style.transform = "translateX(0)";
+        } else {
+            // Swipe left
+            sidebar_window.style.transform = "translateX(-100%)";
+        }
+    }
+    touchStartX = null;
+});
 
 let menu_button = document.getElementById("menu_button");
 

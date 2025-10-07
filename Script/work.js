@@ -47,6 +47,31 @@ class Work {
 const works = [
 
   new Work({
+    id: 8,
+    name: "Match Factory!",
+    shortDescription: "Connect identical items, sort tiles, and clear the board in this mesmerizing 3D puzzle game.",
+    longDescription: "Play relaxing 3D puzzle levels where you connect identical items to clear the board. You can play offline or online, and use boosters to help on tricky stages. It’s a satisfying mix of visual sorting and puzzle strategy.",
+    uniqueSellingPoint: "3D tile matching with offline support and intuitive gameplay",
+    link: "https://play.google.com/store/apps/details?id=net.peakgames.match&hl=en",
+    downloads: "10M+",            // from Google Play listing :contentReference[oaicite:0]{index=0}
+    rating: 4.5,                  // approximate; many locales show 4.6 ★ :contentReference[oaicite:1]{index=1}
+    filterIndexes: [1, 3],
+    keyFeatures: [
+      { title: "Connect & Clear", description: "Link identical items to remove them from the board." },
+      { title: "Offline & Online Play", description: "Enjoy the game with or without internet." },
+      { title: "Boosters", description: "Use special tools to clear difficult levels." },
+      { title: "3D Tile Sorting", description: "Interact with layered, spatial puzzles." }
+    ],
+    technicalDetails: [
+      { title: "In-App Purchases", description: "Offers boosters, passes, and bundles via Google Play / App Store." },
+      { title: "Data Safety & Permissions", description: "Collects analytics, device IDs, location, diagnostics, crash logs. Data is encrypted in transit. :contentReference[oaicite:2]{index=2}" },
+      { title: "Offline Capability", description: "Game supports playing when device is not connected to network." }
+    ],
+    picture_filename: ["img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg"]
+  }),
+
+
+  new Work({
     id: 4,
     name: "Arcade Idle: Crop To Craft",
     shortDescription: "Build a relaxing farm empire with ASMR-inspired idle gameplay.",
@@ -117,6 +142,29 @@ const works = [
       { title: "Fitness Meta-Layer", description: "Character transformations tied to level progress." },
       { title: "Reward Systems", description: "Boosters, coins, and cosmetics via events." },
       { title: "Social Features", description: "Events, tournaments, and global competition." }
+    ],
+    picture_filename: ["img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg"]
+  }),
+
+  new Work({
+    id: 7,
+    name: "Merge Madness: Super Fight",
+    shortDescription: "Merge fighters, build your army, and battle in strategic arenas.",
+    longDescription: "In Merge Madness, you place and combine plants or zombies to evolve your squad and wage war on the grid. Strategically merge units to unlock more powerful ones, manage resources, and outsmart enemies in every encounter.",
+    uniqueSellingPoint: "Merge + strategy battle mechanics in a dynamic grid arena",
+    link: "https://play.google.com/store/apps/details?hl=en_US&id=com.arcanite.plantZombieMadness",
+    downloads: "10K+",   // placeholder — Google Play shows limited installs :contentReference[oaicite:0]{index=0}
+    rating: 4.0,         // approximate (store shows no exact public average) :contentReference[oaicite:1]{index=1}
+    filterIndexes: [3, 4],
+    keyFeatures: [
+      { title: "Merge Units", description: "Combine similar fighters to evolve stronger ones." },
+      { title: "Dual Faction Combat", description: "Play as plants or zombies in strategic battles." },
+      { title: "Dynamic Grid Arena", description: "Battle on a grid that requires tactical placement." },
+      { title: "Unlock & Evolve", description: "Progress through levels to unlock stronger characters." }
+    ],
+    technicalDetails: [
+      { title: "In-Game Data Safety", description: "No data is collected or shared per Google Play listing’s safety section." },
+      { title: "Offline Capabilities", description: "Playable without always requiring an internet connection." }
     ],
     picture_filename: ["img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg"]
   }),
@@ -197,7 +245,80 @@ const works = [
       { title: "Pathfinding", description: "NavMesh generated per level for adaptive movement." }
     ],
     picture_filename: ["img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg"]
+  }),
+
+  new Work({
+    id: 9,
+    name: "Save The Castle!",
+    shortDescription: "Defend your castle against waves of attackers with strategy and upgrades.",
+    longDescription: "Fight off enemy assaults, upgrade your defenses, and hold the line as long as you can. Build towers, manage resources, and adapt your tactics to ever-increasing threats.",
+    uniqueSellingPoint: "Castle defense with strategy upgrades and tower management",
+    link: "https://apps.apple.com/eg/app/save-the-castle/id1665862827",
+    downloads: "100+",        // placeholder, no reliable public figure found
+    rating: 3.9,               // 3.9 ★ from App Store (12 ratings) :contentReference[oaicite:0]{index=0}
+    filterIndexes: [2, 4],
+    keyFeatures: [
+      { title: "Tower Defense", description: "Place and upgrade towers to stop enemy waves." },
+      { title: "Strategic Upgrades", description: "Invest in defensive enhancements and balance your resources." },
+      { title: "Wave Challenge", description: "Survive increasing waves of attackers." },
+      { title: "Replayability", description: "Each run presents shifting tactics and pressure." }
+    ],
+    technicalDetails: [
+      { title: "Data Privacy", description: "Handles identifiers and usage data to track between apps. :contentReference[oaicite:1]{index=1}" },
+      { title: "Advertisements", description: "Includes ads and in-app monetization per store listing." }
+    ],
+    picture_filename: ["img1.jpg","img2.jpg"]
+  }),
+
+
+  // new Work({
+  //   id: 10,
+  //   name: "Combat Guardian: Under Attack",
+  //   shortDescription: "Forge and command an elite force to defend your realm.",
+  //   longDescription: "Dive into the world of Combat Guardian: Under Attack! Merge, strengthen, and command units across fantastical battlegrounds. Adapt your strategy to counter evolving threats and keep your domain safe.",
+  //   uniqueSellingPoint: "Merge + strategy mechanics in real-time defense and unit management",
+  //   link: "https://apps.apple.com/eg/app/combat-guardian-under-attack/id6450951637",
+  //   downloads: "100+",        // placeholder (no reliable public download figure)
+  //   rating: 5.0,               // 5.0 ★ from App Store, based on 3 ratings :contentReference[oaicite:0]{index=0}
+  //   filterIndexes: [3, 4],
+  //   keyFeatures: [
+  //     { title: "Merge & Forge", description: "Combine units to create stronger ones." },
+  //     { title: "Command Strategy", description: "Direct your army across multiple arenas." },
+  //     { title: "Evolving Threats", description: "Counter new enemy types and tactics." },
+  //     { title: "Frequent Content Updates", description: "New battles, challenges, and units over time." }
+  //   ],
+  //   technicalDetails: [
+  //     { title: "App Size & Platform", description: "About 380.1 MB; requires iOS 12.0 or later. :contentReference[oaicite:1]{index=1}" },
+  //     { title: "In-App Purchases", description: "Offers bundles such as “All AppCentral Games Unlocked” and “All Bundle Features Unlocked.” :contentReference[oaicite:2]{index=2}" },
+  //     { title: "Privacy & Data Use", description: "May collect identifiers and usage data for tracking. :contentReference[oaicite:3]{index=3}" }
+  //   ],
+  //   picture_filename: ["img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg"]
+  // }),
+
+  new Work({
+    id: 11,
+    name: "Tap Hop Adventure",
+    shortDescription: "Navigate bouncing balls into hoops by perfect timing taps.",
+    longDescription: "Embark on a hooping adventure — tap to control jumps and guide unique balls through diverse environments and tricky obstacles, aiming to score by landing them in suspended hoops. Use power-ups, master timing, and challenge yourself in endless juggling mode.",
+    uniqueSellingPoint: "Simple tap mechanic meets timing challenge with physics-based balls",
+    link: "https://apps.apple.com/us/app/tap-hop-adventure/id6451442430",
+    downloads: "100+",          // placeholder — no reliable public install count
+    rating: 4.3,                // 4.3 ★ from App Store (19 ratings) :contentReference[oaicite:0]{index=0}
+    filterIndexes: [2, 4],
+    keyFeatures: [
+      { title: "Dynamic Balls", description: "Each ball behaves with its own physics and rhythm." },
+      { title: "Intuitive Controls", description: "Tap to jump and maintain momentum." },
+      { title: "Power-Ups", description: "Freeze time, grow ball, defy gravity, and more." },
+      { title: "Endless Mode", description: "Non-stop play to beat your high score." }
+    ],
+    technicalDetails: [
+      { title: "App Size & Compatibility", description: "About 240.5 MB; requires iOS 12.0 or later. :contentReference[oaicite:1]{index=1}" },
+      { title: "In-App Purchases", description: "Offers “All Bundle Features Unlocked” & “All AppCentral Games Unlocked” packages. :contentReference[oaicite:2]{index=2}" },
+      { title: "Privacy / Tracking", description: "May collect identifiers and usage data per App Store privacy listing. :contentReference[oaicite:3]{index=3}" }
+    ],
+    picture_filename: ["img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg"]
   })
+
 ];
 
 

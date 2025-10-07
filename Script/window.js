@@ -21,6 +21,10 @@ function adjustWindows() {
     } else {
         main_window.style.width = "84%";
         sidebar_window.style.width = "16%";
+        sidebar_window.style.transform = "translateX(0%)";
+        main_window_inner.style.margin = "0";
+        main_window.style.backgroundColor = "white";
+        sidebar_window.style.backgroundColor = "white";
     }
 }
 
